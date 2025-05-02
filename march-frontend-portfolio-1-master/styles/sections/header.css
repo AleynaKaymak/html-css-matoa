@@ -1,0 +1,38 @@
+.header {
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px 20px;
+    background: #323232B2;
+    }
+    .header-navbar {
+    text-align: center;
+    max-width: 1250px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin: 0 auto;
+    
+    }
+    .mobile-menu {
+    display: none;
+    font-size: 18px;
+    font-weight: 700;
+    color:#DEDEDE;
+    }
+    .item-div{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #DEDEDE;
+    }
+    @media (max-width:500px){
+    .mobile-menu {
+    display: flex;
+    align-items: center;
+    }
+    .item-div {
+    display: none;
+    }
+    }

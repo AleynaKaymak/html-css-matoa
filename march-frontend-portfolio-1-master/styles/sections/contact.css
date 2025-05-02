@@ -1,0 +1,35 @@
+.contact-section{
+    margin:80px auto;
+    text-align: center;
+  
+}
+.contact-container{
+   display: flex;
+   flex-direction: column;
+   gap: 35px;
+   align-items: center;
+}
+.contact-title  {
+    font-size: 36px;
+    color: #DEDEDE;
+    font-weight: 700;
+}
+.contact-text {
+    font-weight: 600;
+    font-size: 24px;
+    color: #959595;
+    line-height: 38px;
+    letter-spacing: -0.5px;
+    max-width: 480px;
+}
+ .contact-container button{
+   display: flex;
+   align-items: center;
+   gap: 10px;
+   padding: 16px 48px;
+   background-color: #9D9D9D;
+   color: white;
+   border: none;
+   border-radius: 4px;
+   font-size:18px ;
+}

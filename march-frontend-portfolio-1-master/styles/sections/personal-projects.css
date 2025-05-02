@@ -1,0 +1,33 @@
+ 
+
+.personal-projects-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px auto;
+  padding: 20px;
+  flex-direction: column;
+  }
+  .personal-projects-container .main-title{
+  margin-bottom: 50px;
+  text-align: center;
+  font-size: 35px;
+  }
+ .personal-images{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 24px;
+  border-radius: 4px;
+  }
+  .person-img{
+  width: 400px; /* Görselin başlangıç genişliği */
+  transition: transform 0.3s ease; /* Geçiş efekti */
+  }
+  
+  .person-img:hover {
+  transform: scale(1.05); /* %10 büyütme */
+  opacity: 0.8; /* Hafif şeffaflık */
+  }
+  

@@ -1,0 +1,28 @@
+.prototype-section{
+    width: 100%;
+    max-width: 1440px;
+    margin: 20px auto;
+    }
+    
+    .prototype-text-div{
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+    padding: 20px;
+    }
+    
+    .prototype-text-part{
+    opacity: 70%;
+    width: fit-content;
+    border-bottom: 1px solid #A5A5A5;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: 1.5px;
+    color: #DEDEDE;
+    }
+    @media (max-width:750px) {
+    .prototype-text-div {
+    gap: 40px;
+    }
+    }

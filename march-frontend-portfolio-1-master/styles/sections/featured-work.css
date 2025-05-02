@@ -1,0 +1,123 @@
+.featured-work-section {
+    padding: 30px;
+    width: 100%;
+    margin: 50px auto;
+}
+
+.featured-work-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 20px;
+    gap: 55px;
+}
+
+.featured-work-header-text {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.featured-work-header-text h4 {
+    font-size: 16px;
+    font-weight: 700;
+    color: #DEDEDE;
+    letter-spacing: 1.5px;
+    line-height: 16px;
+    text-transform: uppercase;
+}
+
+.featured-work-images {
+    display: flex;
+    gap: 15px;
+}
+
+.featured-images-left,
+.featured-images-right
+{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 15px;
+}
+
+.featured-images-right {
+    margin-top: 100px;
+}
+
+.featured-image-overlay {
+    position: relative;
+    overflow: hidden;
+}
+
+.img-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #DEDEDE;
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    line-height: 100%;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.featured-image-overlay:hover .img-text {
+    opacity: 1;
+}
+
+.featured-image-overlay::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.featured-image-overlay:hover::before {
+    opacity: 1;
+}
+
+@media (max-width: 932px) {
+    .img-text {
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 768px) {
+    .img-text {
+        font-size: 26px;
+    }
+
+    .featured-work-images {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .featured-work-header-text{
+        text-align: center;
+        justify-content: center;
+    }
+
+    .featured-images-right {
+        margin: 0;
+    }
+
+    .featured-images-left,
+    .featured-images-right {
+        width: 70%;
+    }
+}
+
+@media (max-width: 500px) {
+    .featured-images-left,
+    .featured-images-right {
+        width: 90%;
+    }
+} 

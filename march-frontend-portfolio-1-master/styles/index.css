@@ -1,0 +1,14 @@
+@import "./global/reset.css";
+@import "./sections/example.css";
+@import "./sections/solution.css";
+@import "./sections/personal-projects.css";
+@import "./sections/conclusion.css";
+@import "./sections/footer.css";
+@import "./sections/problem.css";
+@import "./sections/header.css";
+@import "./sections/contact.css";
+@import "./sections/visual.css";
+@import "./sections/featured-work.css";
+@import "./sections/covibe.css";
+@import "./sections/hero.css";
+@import "./sections/prototype.css";
