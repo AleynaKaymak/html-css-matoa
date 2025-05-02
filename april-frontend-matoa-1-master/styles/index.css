@@ -1,0 +1,12 @@
+@import "./global/reset.css";
+@import "./sections/example.css";
+@import "./sections/header.css";
+@import "./sections/footer.css";
+@import "./sections/newslatter.css";
+@import "./sections/testimonials.css";
+@import "./sections/faqs.css";
+@import "./sections/contactus.css";
+@import "./sections/maincategories.css";
+@import "./sections/intagram.css";
+@import "./sections/monthlydeals.css";
+@import "./sections/company-logos.css";

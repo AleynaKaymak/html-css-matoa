@@ -1,0 +1,60 @@
+.newsletter-title {
+  font-weight: 500;
+  font-size: 36px;
+  color: #243547;
+  font-family: "Taviraj", sans-serif;
+}
+.newsletter-container {
+  display: flex; /* Flexbox düzeni */
+  justify-content: space-between; /* Öğeler arasına eşit boşluk bırakma */
+  max-width: 1440px;
+  padding: 50px 30px;
+  margin: auto;
+}
+
+.email-form-container {
+  display: flex;
+  align-items: center; /* Dikeyde ortalama */
+  position: relative;
+}
+
+.email-form-container input {
+  width: 400px;
+  height: 70px;
+  border: 1px solid #000000;
+  display: flex;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Nunito", sans-serif;
+  
+}
+.submit-button {
+  position: absolute;
+  right: 5%;
+  width: 50px;
+  height: 50px;
+  border: none;
+  cursor: pointer;
+  background-color: #d84727;
+  color: white;
+}
+
+@media (max-width: 820px) {
+  .newsletter-container {
+    flex-direction: column;
+    gap: 40px;
+      
+  }
+  .submit-button {
+    left: 330px;
+  }
+}
+
+
+
+@media (max-width: 465px) {
+  .submit-button {
+    left:80%; 
+  }
+}

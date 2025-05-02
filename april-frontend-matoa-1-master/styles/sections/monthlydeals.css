@@ -1,0 +1,155 @@
+.monthly-deals {
+    display: flex;
+    flex-direction: column;
+    font-family: "Taviraj", sans-serif;
+    color: rgba(51, 51, 51, 1);
+    font-size: 24px;
+    display: flex;
+    gap: 60px;
+    max-width: 1440px;
+    margin: 30px auto;
+    gap: 80px;
+    width: 100%;
+}
+
+.monthly-deals h2 {
+    font-family: "Taviraj", sans-serif;
+    font-size: 36px;
+    font-weight: 500px;
+    line-height: 40px;
+    letter-spacing: 2%;
+    margin-left: 11%;
+
+}
+
+.product-grid {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-left: 11%;
+    margin-right: auto;
+    width: fit-content;
+
+
+}
+
+.product-card {
+    width: 20%;
+    padding: 25px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.product-img {
+    margin-top: -60px;
+    height: auto;
+    width: 221px;
+
+}
+
+.product-card h3 {
+    font-family: "Taviraj", sans-serif;
+    font-size: 24px;
+    margin: 20px 0 10px;
+    text-align: left;
+}
+
+.discount {
+    color: rgba(119, 119, 119, 1);
+    font-family: "Taviraj", sans-serif;
+    font-size: 16px;
+    text-align: left;
+}
+
+.price {
+    font-size: 24px;
+    color: rgba(51, 51, 51, 1);
+}
+
+.old-price {
+    text-decoration: line-through;
+    text-decoration-color: rgba(217, 63, 63, 1);
+    color: rgba(119, 119, 119, 1);
+    font-size: 16px;
+}
+
+.button-container {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.heart-icon .img {
+    width: 39px;
+    height: 39px;
+    cursor: pointer;
+}
+
+.add-to-cart {
+    font-family: "Taviraj", sans-serif;
+    font-size: 16px;
+    padding: 8px 23px;
+    background-color: rgba(216, 71, 39, 1);
+    color: rgba(255, 255, 255, 1);
+    border: none;
+    cursor: pointer;
+}
+
+@media (max-width: 1180px) {
+    .product-card {
+        width: 45%;
+        align-items: center;
+    }
+
+    .monthly-deals h2 {
+        font-size: 100%;
+    }
+
+    .price,
+    .old-price {
+        font-size: 100%;
+    }
+
+    .discount {
+        font-size: 100%;
+    }
+
+    .add-to-cart {
+        width: fit-content;
+    }
+}
+
+@media (max-width: 600px) {
+    .product-card {
+        width: 100%;
+    }
+
+    .monthly-deals h2 {
+        font-size: 100%;
+    }
+
+    .product-card h3 {
+        font-size: 100%;
+    }
+
+    .price,
+    .old-price {
+        font-size: 100%;
+    }
+
+    .discount {
+        font-size: 100%;
+    }
+}
+
+@media (max-width: 280px) {
+    .monthly-deals {
+        font-size: 100%;
+    }
+
+    .add-to-cart {
+        width: 100%;
+    }
+}

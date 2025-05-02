@@ -1,0 +1,124 @@
+header {
+  width: 100%;
+  max-width: 1440px;
+  margin: 30px auto;
+  position: relative;
+}
+.header_container {
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+.header_right {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.nav_menu {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+.nav_menu a {
+  font-family: "Taviraj", sans-serif;
+  font-size: 20px;
+  color: #333;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+.login {
+  border: none;
+  font-family: "Taviraj", sans-serif;
+  font-size: 18px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.icon_cart {
+  border-radius: 50%;
+  background-color: rgba(241, 221, 201, 1);
+  padding: 8px;
+}
+.header-right-icon {
+  width: 28px;
+  height: 28px;
+}
+.hamburger-menu {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+}
+#menu-toggle {
+  display: none !important;
+}
+.nav_mobile_actions {
+  display: none;
+  gap: 20px;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.cart-icon {
+  background-color: rgba(241, 221, 201, 1);
+  padding: 8px;
+  border-radius: 50%;
+}
+
+@media (max-width: 768px) {
+  .hamburger-menu {
+    display: block;
+  }
+
+  .nav_menu {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    display: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 99;
+    background-color: white;
+  }
+
+  #menu-toggle:checked + .hamburger-menu + .nav_menu {
+    display: flex;
+  }
+
+  .nav_mobile_actions {
+    display: flex;
+  }
+
+  .header_right {
+    display: none;
+  }
+
+  .nav_menu a {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav_menu {
+    top: 70px;
+  }
+
+  .nav_menu a {
+    font-size: 16px;
+  }
+
+  .header-icon {
+    width: 24px;
+    height: 24px;
+  }
+
+  .login {
+    font-size: 16px;
+  }
+}
